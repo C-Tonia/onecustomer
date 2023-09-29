@@ -18,7 +18,9 @@ const NavItems = ref([
 ]);
 </script>
 <template>
-  <nav class="w-1/3 bg-primary text-white fixed min-h-full">
+  <nav
+    class="w-1/3 bg-primary text-white fixed min-h-full transition-all duration-300"
+  >
     <h1 class="text-lg py-[1.15rem] px-6 font-semibold">Easy Pay</h1>
     <ul>
       <p class="pt-6 px-6 pb-1 text-xs text-gray-200">Bill Payments</p>
@@ -39,30 +41,6 @@ const NavItems = ref([
           <span class="text-sm hover:text-gray-400">{{ item.title }}</span>
         </RouterLink>
       </li>
-      <!-- <li class="py-2 px-[26px] hover:bg-sideHover">
-        <RouterLink to="/electricity" class="flex items-center gap-3">
-          <i class="ri-battery-charge-line text-xl text-gray-400"></i>
-          <span class="text-sm">Electricity Bill</span></RouterLink
-        >
-      </li>
-      <li class="py-2 px-[26px] hover:bg-sideHover">
-        <RouterLink to="" class="flex items-center gap-3">
-          <i class="ri-phone-line text-xl text-gray-400"></i>
-          <span class="text-sm">Buy Airtime</span>
-        </RouterLink>
-      </li>
-      <li class="py-2 px-[26px] hover:bg-sideHover">
-        <RouterLink to="" class="flex items-center gap-3">
-          <i class="ri-global-line text-gray-400 text-xl"></i>
-          <span class="text-sm">Buy Mobile Data</span>
-        </RouterLink>
-      </li>
-      <li class="py-2 px-[26px] hover:bg-sideHover">
-        <RouterLink to="" class="flex items-center gap-3">
-          <i class="ri-tv-line text-gray-400 text-xl"></i>
-          <span class="text-sm">Buy TV Subscription</span>
-        </RouterLink>
-      </li> -->
       <p class="pt-6 pb-1 px-6 text-xs text-gray-200">Page</p>
       <li class="py-2 px-[26px] hover:bg-sideHover">
         <a href="#" class="flex items-center gap-3">

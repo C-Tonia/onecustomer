@@ -1,12 +1,12 @@
 <script setup>
 import { ref, computed } from "vue";
-import LayoutVue from "../components/Layout.vue";
-import ProviderCardVue from "../components/ProviderCard.vue";
-import CardVue from "../components/Card.vue";
-import CustomSelectVue from "../components/CustomSelect.vue";
+import LayoutVue from "../../components/Layout.vue";
+import ProviderCardVue from "../../components/ProviderCard.vue";
+import CardVue from "../../components/Card.vue";
+import CustomSelectVue from "../../components/CustomSelect.vue";
 
 // importing the store with list of all networkProviders
-import { useTvProviders } from "../store/tvSub";
+import { useTvProviders } from "../../store/tvSub";
 
 const providers = useTvProviders(); //from the store
 const placeholderForTvType = ref("");

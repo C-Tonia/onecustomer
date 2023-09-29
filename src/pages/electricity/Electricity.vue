@@ -1,8 +1,8 @@
 <script setup>
-import LayoutVue from "../components/Layout.vue";
-import NetworkCard from "../components/NetworkCard.vue";
-import CardVue from "../components/Card.vue";
-import { useNetworkProvider } from "../store/networkProvider";
+import LayoutVue from "../../components/Layout.vue";
+import NetworkCard from "../../components/NetworkCard.vue";
+import CardVue from "../../components/Card.vue";
+import { useNetworkProvider } from "../../store/networkProvider";
 const providers = useNetworkProvider();
 </script>
 <template>

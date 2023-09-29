@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../pages/Dashboard.vue";
-import Electricity from "../pages/Electricity.vue";
-import BuyAirtime from "../pages/BuyAirtime.vue";
-import BuyData from "../pages/BuyData.vue";
-import BuyTvSub from "../pages/BuyTvSub.vue";
+import Electricity from "../pages/electricity/Electricity.vue";
+import BuyAirtime from "../pages/topup/BuyAirtime.vue";
+import BuyData from "../pages/topup/BuyData.vue";
+import BuyTvSub from "../pages/tv-subscription/BuyTvSub.vue";
 
 const router = createRouter({
   history: createWebHistory(),
