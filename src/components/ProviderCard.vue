@@ -4,7 +4,7 @@ const { provider, activeTab } = defineProps(["provider", "activeTab"]);
 </script>
 <template>
   <CardVue
-    class="min-[420px]:w-40 mb-0 flex justify-center pt-2 min-[420px]:-mr-1 sm:-mr-5 cursor-pointer overflow-clip"
+    class="min-[420px]:w-40 mb-0 flex justify-center items-center pt-2 min-[420px]:-mr-1 sm:-mr-5 cursor-pointer overflow-clip h-32"
     :class="{
       'border-2 border-green-500 z-30 grayscale-0': activeTab === provider.name,
       'border-2 grayscale': activeTab !== provider.name,

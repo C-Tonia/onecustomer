@@ -4,8 +4,8 @@ const openSideBar = useOpenNavbarStore();
 </script>
 <template>
   <div :class="{ 'md:flex': openSideBar.isOpen }">
-    <div :class="{ 'md:w-1/3': openSideBar.isOpen }"></div>
-    <div :class="{ ' md:w-2/3': openSideBar.isOpen }">
+    <div :class="{ 'md:w-1/5': openSideBar.isOpen }"></div>
+    <div :class="{ ' md:w-4/5': openSideBar.isOpen }">
       <header class="py-3 px-5 bg-white">
         <nav class="">
           <div class="flex justify-start">

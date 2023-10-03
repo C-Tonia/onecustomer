@@ -140,14 +140,18 @@ const networkProvider = computed(() => {
   <LayoutVue>
     <CardVue class="py-3">
       <div class="mb-3 text-center">
-        <h1 class="font-semibold text-2xl md:leading-3">Purchase Your Data</h1>
-        <p class="italic text-[10px] text-green-500 font-medium">
+        <h1 class="font-semibold text-2xl">Purchase Your Data</h1>
+        <p class="italic text-[10px] text-green-500 font-medium mb-2">
           ...Get Instant Data Top up. Never be out of data again..
         </p>
       </div>
 
-      <h5 class="text-lg font-medium my-2">Choose your network provider</h5>
-      <div class="grid grid-cols-2 min-[420px]:flex pt-0">
+      <h5 class="text-lg font-medium mb-2 text-center mt-4">
+        Choose your network provider
+      </h5>
+      <div
+        class="grid grid-cols-2 min-[420px]:flex min-[420px]:justify-around gap-4 pt-0 mt-3"
+      >
         <ProviderCardVue
           class=""
           v-for="provider in providers.providers"
