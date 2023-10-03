@@ -169,10 +169,11 @@ const networkProvider = computed(() => {
         </h2>
         <form action="" method="post">
           <input
+          required
             type="text"
             :placeholder="placeholderForNumber || 'Enter Phone Number'"
           />
-          <input
+          <input required
             type="text"
             disabled
             :placeholder="placeholderForVtu || ' VTU'"
@@ -191,6 +192,7 @@ const networkProvider = computed(() => {
           >
             <span>&#8358;</span>
             <input
+            required
               v-model="dataOption.selectOption.amount"
               disabled
               type="Number"

@@ -152,6 +152,7 @@ const networkProvider = computed(() => {
         </h2>
         <form action="" method="post">
           <input
+            required
             type="text"
             :placeholder="placeholderForTvType || 'Choose your Cable provider'"
           />
@@ -175,6 +176,7 @@ const networkProvider = computed(() => {
           >
             <span>&#8358;</span>
             <input
+              required
               type="Number"
               placeholder=" Amount"
               disabled

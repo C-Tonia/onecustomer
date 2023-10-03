@@ -17,6 +17,10 @@ const router = createRouter({
       component: Electricity,
     },
     {
+      path: "/electricity/:name",
+      component: ElectricityForm,
+    },
+    {
       path: "/buy-airtime",
       component: BuyAirtime,
     },

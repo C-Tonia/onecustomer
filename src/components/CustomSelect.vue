@@ -6,11 +6,11 @@ const dataOption = useBuyData();
 // const dataOption = ref(" ");
 </script>
 <template>
-  <div class="select bg-[#F3F5F9]">
+  <div class="relative">
     <select
       id="account_type"
       name="account_type"
-      class="bg-[#F3F5F9]"
+      class="bg-[#F3F5F9] rounded-lg"
       v-model="dataOption.selectOption"
     >
       <option value="" selected disabled>Select A Plan</option>
@@ -22,62 +22,18 @@ const dataOption = useBuyData();
         {{ items.title }}
       </option>
     </select>
-    <span class="focus"></span>
+    <div
+      class="text-center text-gray-400 absolute top-2 left-2"
+      v-if="!dataOption.selectOption.title"
+    >
+      Select A Plan
+    </div>
   </div>
 </template>
 <style scoped>
 select {
-  appearance: none;
-  /* safari */
-  -webkit-appearance: none;
-  /* other styles for aesthetics */
-  width: 100%;
-  font-size: 14px;
-  padding: 10px;
-  /* border: 1px solid #caced1; */
-  border-radius: 0.25rem;
-  color: #000;
-  cursor: pointer;
-  outline: none;
-  display: grid;
-}
-select::-ms-expand {
-  display: none;
-}
-.select {
-  width: 100%;
-  /* border: 1px solid var(--select-border); */
-  border-radius: 0.25em;
-  /* padding: 0.25em 0.5em; */
-  font-size: 14px;
-  cursor: pointer;
-  line-height: 1.1;
-  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
-  grid-template-areas: "select";
-  align-items: center;
-  position: relative;
-}
-.select::after {
-  content: "";
-  width: 0.8em;
-  height: 0.5em;
-  /* background-color: var(--select-arrow); */
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  @apply appearance-none  w-full text-xs py-2 px-3 cursor-pointer outline-none;
 }
 
-select,
-.select:after {
-  grid-area: select;
-  justify-self: end;
-}
-select:focus + .focus {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-  /* border: 2px solid var(--select-focus); */
-  border-radius: inherit;
-}
 /* .select:not(.select--multiple)::after */
 </style>
